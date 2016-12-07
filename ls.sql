@@ -41,6 +41,8 @@ union all
 select 'indexes'                  name, 'show info about indexes' text from dual
 union all
 select 'vparams'                  name, 'show v$params' text from dual
+union all
+select 'grants_for_using_advisor' name, 'grants for using advisor' text from dual
 )
 order by name
 /
