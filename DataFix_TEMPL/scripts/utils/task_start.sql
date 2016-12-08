@@ -13,7 +13,7 @@ CONN &owner_username/&owner_password@&dbtns
 
 COL system_time NEW_VALUE start_time;
 SELECT TO_CHAR(SYSDATE,'YYYY-MM-DD-HH24-MI-SS') system_time FROM dual;
-SPOOL ..\logs\&taskname-&start_time..log
+SPOOL ../logs/&taskname-&start_time..log
 PROMPT ============================================================================================
 PROMPT Started task:       &taskname
 PROMPT At:                 &start_time
