@@ -43,6 +43,8 @@ union all
 select 'vparams'                  name, 'show v$params' text from dual
 union all
 select 'grants_for_using_advisor' name, 'grants for using advisor' text from dual
+union all
+select 'user_objects'             name, 'show user_objects with statuses' text from dual
 )
 order by name
 /
