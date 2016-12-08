@@ -19,7 +19,6 @@ declare
 
   procedure pr_rollback
   is
-    x number := 0;
   begin
     dbms_output.put_line('&taskname');
   end;
