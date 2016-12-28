@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outTrade:message xmlns:outTrade="http://www.db.com/ibit/gmf/mmrepo/magellan/messages/outTrade/v1" xmlns:acc="http://www.db.com/ibit/gmf/mmrepo/magellan/types/account/v1" xmlns:brkr="http://www.db.com/ibit/gmf/mmrepo/magellan/types/broker/v1" xmlns:cpy="http://www.db.com/ibit/gmf/mmrepo/magellan/types/counterparty/v1" xmlns:header="http://www.db.com/ibit/gmf/mmrepo/magellan/types/header/v1" xmlns:le="http://www.db.com/ibit/gmf/mmrepo/magellan/types/legalEntity/v1" xmlns:magTypes="http://www.db.com/ibit/gmf/mmrepo/magellan/types/magellanTypes/v1" xmlns:prds="http://www.db.com/ibit/gmf/mmrepo/magellan/types/prds/v1" xmlns:sec="http://www.db.com/ibit/gmf/mmrepo/magellan/types/security/v1" xmlns:st="http://www.db.com/ibit/gmf/mmrepo/magellan/types/salesTeam/v1" xmlns:trade="http://www.db.com/ibit/gmf/mmrepo/magellan/types/trade/v1" xmlns:tradeDeal="http://www.db.com/ibit/gmf/mmrepo/magellan/types/tradeStructDeal/v1" xmlns:trdSt="http://www.db.com/ibit/gmf/mmrepo/magellan/types/tradeStatus/v1" xmlns:tt="http://www.db.com/ibit/gmf/mmrepo/magellan/types/tradeTypes/v1" xmlns:xsn="http://www.w3.org/2001/XMLSchema">
+
+  <outTrade:header>
+    <header:messageType />
+    <header:publishDate>2015-01-29</header:publishDate>
+    <header:publishTime>08:15:22.00</header:publishTime>
+    <header:correlationId>1</header:correlationId>
+    <header:sender>
+      <header:systemName>MAGELLAN</header:systemName>
+      <header:processName>TRADE_SERVICE_OUT</header:processName>
+      <header:ipAddress>127.0.0.0</header:ipAddress>
+      <header:hostname />
+      <header:userFullName />
+      <header:userProcessName />
+    </header:sender>
+  </outTrade:header>
+
+  <outTrade:body>
+    <outTrade:action>NEW</outTrade:action>
+    <outTrade:object>
+      <outTrade:Trade>
+        <trade:locationId>NYK</trade:locationId>
+        <trade:legalEntityId>DMG LDN</trade:legalEntityId>
+        <trade:tradeTypeId>BL</trade:tradeTypeId>
+        <trade:borrowOrLoan>L</trade:borrowOrLoan>
+        <trade:cashCcy>USD</trade:cashCcy>
+        <trade:securityCcy>USD</trade:securityCcy>
+        <trade:contractId>0</trade:contractId>
+        <trade:versionNo>0</trade:versionNo>
+        <trade:startCash>0.000000000000000000</trade:startCash>
+        <trade:startDate>2015-01-29</trade:startDate>
+        <trade:startPrice>100.000000000000000000</trade:startPrice>
+        <trade:repoRate>-0.000000000000000000</trade:repoRate>
+        <trade:nominal>10000000.000000000000000000</trade:nominal>
+        <trade:cleanPrice>99.992869729999995343</trade:cleanPrice>
+        <trade:endCash>0.000000000000000000</trade:endCash>
+        <trade:endDate>1900-01-01</trade:endDate>
+        <trade:endPrice>100.000000000000000000</trade:endPrice>
+        <trade:settleId>0</trade:settleId>
+        <trade:status>SEND</trade:status>
+        <trade:sourceId>GRIP</trade:sourceId>
+        <trade:action>NEW</trade:action>
+        <trade:entryDate>2015-01-29</trade:entryDate>
+        <trade:trader>LATEAVE</trade:trader>
+        <trade:tradeDate>2015-01-29</trade:tradeDate>
+        <trade:interlifeId>0</trade:interlifeId>
+        <trade:startYieldPrice>0.368476147327115422</trade:startYieldPrice>
+        <trade:startFXRate>1.000000000000000000</trade:startFXRate>
+        <trade:endFXRate>1.000000000000000000</trade:endFXRate>
+        <trade:carryInterestFlag>N</trade:carryInterestFlag>
+        <trade:haircut>100.000000000000000000</trade:haircut>
+        <trade:brokerFee>0.000000000000000000</trade:brokerFee>
+        <trade:callHours>0</trade:callHours>
+        <trade:couponBypass>U</trade:couponBypass>
+        <trade:startOverrideCash>0.000000000000000000</trade:startOverrideCash>
+        <trade:endOverrideCash>0.000000000000000000</trade:endOverrideCash>
+        <trade:salesCredit>0.000000000000000000</trade:salesCredit>
+        <trade:fee>0.000000000000000000</trade:fee>
+        <trade:origStartDate>2015-01-29</trade:origStartDate>
+        <trade:repoInterest>0.000000000000000000</trade:repoInterest>
+        <trade:lastUpdateDate>2015-01-29</trade:lastUpdateDate>
+        <trade:lastUpdateUser>LATEAVE</trade:lastUpdateUser>
+        <trade:startSettledNominal>0.000000000000000000</trade:startSettledNominal>
+        <trade:startSettledCash>0.000000000000000000</trade:startSettledCash>
+        <trade:startSettledDate>1900-01-02</trade:startSettledDate>
+        <trade:endSettledDate>1900-01-02</trade:endSettledDate>
+        <trade:yearBasis>360</trade:yearBasis>
+        <trade:repriceId>0</trade:repriceId>
+        <trade:splitId>0</trade:splitId>
+        <trade:washId>0</trade:washId>
+        <trade:irregularSettlement>N</trade:irregularSettlement>
+        <trade:carryInterest>0.000000000000000000</trade:carryInterest>
+        <trade:dateConfirmed>1900-01-02</trade:dateConfirmed>
+        <trade:headTradeInd>N</trade:headTradeInd>
+        <trade:undoVersion />
+        <trade:reInvestCarriedInterest>N</trade:reInvestCarriedInterest>
+        <trade:spread>0.000000000000000000</trade:spread>
+        <trade:tradeId>143593251</trade:tradeId>
+        <trade:securityId>42603714</trade:securityId>
+        <trade:counterpartyId>40135559</trade:counterpartyId>
+        <trade:accountId>40029136</trade:accountId>
+        <trade:comments />
+        <trade:entryTime>08:15:18</trade:entryTime>
+        <trade:externalId />
+        <trade:contraAccountId>0</trade:contraAccountId>
+        <trade:startDeliveryMethod>FREE</trade:startDeliveryMethod>
+        <trade:endDeliveryMethod>FREE</trade:endDeliveryMethod>
+        <trade:modId />
+        <trade:modDate>1900-01-02</trade:modDate>
+        <trade:fxOperator>M</trade:fxOperator>
+        <trade:overrideFlags />
+        <trade:indexDetailId />
+        <trade:brokerSid>0</trade:brokerSid>
+        <trade:salesTeamSid>0</trade:salesTeamSid>
+        <trade:rejectMessage />
+        <trade:depotAccountSid>40002805</trade:depotAccountSid>
+        <trade:subsDescription />
+        <trade:lastUpdateTime>13:15:18</trade:lastUpdateTime>
+        <trade:settleSystemId>DBTRADER</trade:settleSystemId>
+        <trade:operationComment />
+        <trade:endDepotAccount>40002805</trade:endDepotAccount>
+        <trade:endCpyDepot>E97511</trade:endCpyDepot>
+        <trade:startCpyDepot>E97511</trade:startCpyDepot>
+        <trade:endSettledNominal>0.000000000000000000</trade:endSettledNominal>
+        <trade:endSettledCash>0.000000000000000000</trade:endSettledCash>
+        <trade:startSettleStatus />
+        <trade:endSettleStatus />
+        <trade:startNostro>E91255</trade:startNostro>
+        <trade:endNostro>E91255</trade:endNostro>
+        <trade:startCpyNostro>E97511</trade:startCpyNostro>
+        <trade:endCpyNostro>E97511</trade:endCpyNostro>
+        <trade:daylightInd />
+        <trade:entryUser>LATEAVE</trade:entryUser>
+        <trade:bondDelivery />
+        <trade:startFailReasonCode />
+        <trade:endFailReasonCode />
+        <trade:interlifeAction />
+        <trade:suppressInstruction />
+        <trade:externalId2 />
+        <trade:includeHaircut>N</trade:includeHaircut>
+        <trade:special>N</trade:special>
+        <trade:nextInterlifeSid>0</trade:nextInterlifeSid>
+        <trade:prevInterlifeSid>0</trade:prevInterlifeSid>
+        <trade:systemComments />
+        <trade:externalStatus>QUEUED</trade:externalStatus>
+        <trade:nettingAgent />
+        <trade:pcValue>1</trade:pcValue>
+        <trade:pcInvestmentGrade>Y</trade:pcInvestmentGrade>
+        <trade:pcSpecialFlag>N</trade:pcSpecialFlag>
+        <trade:pcTenor>0</trade:pcTenor>
+        <trade:dayBasis>ACT</trade:dayBasis>
+        <trade:salesCreditCode>B3</trade:salesCreditCode>
+        <trade:buffer>0.000000000000000000</trade:buffer>
+        <trade:allocationId>0</trade:allocationId>
+        <trade:structuredTradeInd>N</trade:structuredTradeInd>
+        <trade:structuredType />
+        <trade:structuredDays>0</trade:structuredDays>
+        <trade:structuredStatus />
+        <trade:structuredRollDate>1900-01-02</trade:structuredRollDate>
+        <trade:security>
+          <sec:shortCode>NRWBK</sec:shortCode>
+          <sec:description>NRW.BANK</sec:description>
+          <sec:coupon>0.366700000000000026</sec:coupon>
+          <sec:ccy>USD</sec:ccy>
+          <sec:baseCcy>USD</sec:baseCcy>
+          <sec:secType>CORP</sec:secType>
+          <sec:issueDate>2015-01-22</sec:issueDate>
+          <sec:maturityDate>2019-01-22</sec:maturityDate>
+          <sec:source>BLOOMBERG</sec:source>
+          <sec:minDenonmination>1.000000000000000000</sec:minDenonmination>
+          <sec:liquidityId>1</sec:liquidityId>
+          <sec:liquidityDaysOverride>0</sec:liquidityDaysOverride>
+          <sec:specialFlag>N</sec:specialFlag>
+          <sec:specialEndDate>1900-01-02</sec:specialEndDate>
+          <sec:basketId>0</sec:basketId>
+          <sec:tradedInd>Y</sec:tradedInd>
+          <sec:id>42603714</sec:id>
+          <sec:issuerType />
+          <sec:issuerId>40002152</sec:issuerId>
+          <sec:countryId>DE</sec:countryId>
+          <sec:blockedBy />
+          <sec:redemptionValue>0.000000000000000000</sec:redemptionValue>
+          <sec:reDenominate>1900-01-02</sec:reDenominate>
+          <sec:poolFactor>0.000000000000000000</sec:poolFactor>
+          <sec:defaultDepotId />
+          <sec:subType />
+          <sec:isin>XS1170496472</sec:isin>
+          <sec:cusip>EK6971056</sec:cusip>
+          <sec:sedol />
+          <sec:commonCode />
+          <sec:wertpapierCode />
+          <sec:quickCode>EK6971056</sec:quickCode>
+          <sec:ecbCode>N</sec:ecbCode>
+          <sec:tseCode />
+          <sec:moodyRating />
+          <sec:moodyShortTermRating />
+          <sec:spRating>AA-</sec:spRating>
+          <sec:spShortTermRating />
+          <sec:modId>MART_REC</sec:modId>
+          <sec:modDate>2015-01-26</sec:modDate>
+        </trade:security>
+        <trade:account>
+          <acc:description>LDN HOUSE BONDS BUFFER</acc:description>
+          <acc:legalEntity>DMG LDN</acc:legalEntity>
+          <acc:source>DBTRADER</acc:source>
+          <acc:purpose>F</acc:purpose>
+          <acc:externalId>5264</acc:externalId>
+          <acc:restrictedRead>N</acc:restrictedRead>
+          <acc:restrictedWrite>N</acc:restrictedWrite>
+          <acc:limitTradeCash>N</acc:limitTradeCash>
+          <acc:id>40029136</acc:id>
+          <acc:shortcode>LTSYSLD</acc:shortcode>
+          <acc:tradedInd>Y</acc:tradedInd>
+          <acc:linkAccountSid>0</acc:linkAccountSid>
+          <acc:externalId2 />
+          <acc:modId>JATASRI</acc:modId>
+          <acc:modDate>2012-01-19T00:00:00</acc:modDate>
+        </trade:account>
+        <trade:counterparty>
+          <cpy:description>DEUTSCHE BANK ALEX BROWN INC</cpy:description>
+          <cpy:shortCode>EDBNYFED</cpy:shortCode>
+          <cpy:externalId>C325182</cpy:externalId>
+          <cpy:legalEntity>DMG LDN</cpy:legalEntity>
+          <cpy:cpyType>C</cpy:cpyType>
+          <cpy:source>DBTRADER</cpy:source>
+          <cpy:tradedInd>Y</cpy:tradedInd>
+          <cpy:haircutMethod>S</cpy:haircutMethod>
+          <cpy:feeBillingPeriod>1</cpy:feeBillingPeriod>
+          <cpy:id>40135559</cpy:id>
+          <cpy:jurisdictionId />
+          <cpy:prefSettle />
+          <cpy:countryId>US</cpy:countryId>
+          <cpy:legalCpyId>330</cpy:legalCpyId>
+          <cpy:sendTradeConfirm>N</cpy:sendTradeConfirm>
+          <cpy:defaultSalesTeamId>0</cpy:defaultSalesTeamId>
+          <cpy:keepShortCode>N</cpy:keepShortCode>
+          <cpy:bicCode />
+          <cpy:defaultComments />
+          <cpy:profileId>0</cpy:profileId>
+          <cpy:defaultBrokerSid>0</cpy:defaultBrokerSid>
+          <cpy:legalExternalEntityId>40003244</cpy:legalExternalEntityId>
+          <cpy:fxDeliveryMethod />
+          <cpy:blockId>0</cpy:blockId>
+          <cpy:conduitId>0</cpy:conduitId>
+          <cpy:modId>SEDHSIN</cpy:modId>
+          <cpy:modDate>2014-09-26</cpy:modDate>
+        </trade:counterparty>
+        <trade:prds>
+          <prds:rpid>41949</prds:rpid>
+          <prds:riskProduct>StockLend</prds:riskProduct>
+        </trade:prds>
+      </outTrade:Trade>
+    </outTrade:object>
+  </outTrade:body>
+
+</outTrade:message>
