@@ -1,3 +1,7 @@
+package Database;
+
+import Property.IProperties;
+
 import java.io.*;
 import java.sql.*;
 
@@ -5,8 +9,7 @@ import java.sql.*;
  * Created by oracle on 12/29/16.
  */
 public class DatabaseConnectAndSave {
-    private InputProperties l_iproper;
-    private InputParameters l_iparams;
+    private IProperties l_iproper;
 
     private void CheckDirectoryExists(){
         File theDir = new File(Constants.FOLDER_NAME);
@@ -26,15 +29,14 @@ public class DatabaseConnectAndSave {
             }
         }
     }
-    DatabaseConnectAndSave(InputProperties iproper, InputParameters iparams){
-        l_iproper = iproper;
-        l_iparams = iparams;
+    public DatabaseConnectAndSave(IProperties properties){
+        l_iproper = properties;
     }
     public void SaveData() throws SQLException, IOException {
 
         CheckDirectoryExists();
 
-        Connection orclConn = (new OracleJDBC()).getConnection(l_iproper, l_iparams);
+        Connection orclConn = (new OracleJDBC()).getConnection(l_iproper);
         //String stSql = "select system_trade_id as file_name, message_body from inbound_trades where id = 58145834";
         //String stSql = "select system_trade_id as file_name, message_body from inbound_ged_notification where system_trade_id like '%643783'";
         String stSql = "select system_trade_id as file_name, message_body from inbound_ged_notification";

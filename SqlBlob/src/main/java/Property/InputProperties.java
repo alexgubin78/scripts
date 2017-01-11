@@ -1,3 +1,5 @@
+package Property;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -26,16 +28,13 @@ public class InputProperties {
     InputProperties(String dbName){
         Properties prop = new Properties();
         InputStream input = null;
-
         try {
-
-            input = getClass().getResourceAsStream("config.properties");
+            input = getClass().getResourceAsStream("..//config.properties");
             prop.load(input);
 
             databaseName = prop.getProperty(dbName.concat("_database"));
             hostName = prop.getProperty(dbName.concat("_host"));
             portNumber = prop.getProperty(dbName.concat("_port"));
-
         } catch (IOException ex) {
             ex.printStackTrace();
         } finally {

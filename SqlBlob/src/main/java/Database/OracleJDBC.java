@@ -1,3 +1,7 @@
+package Database;
+
+import Property.IProperties;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -6,7 +10,7 @@ import java.sql.SQLException;
  * Created by oracle on 12/29/16.
  */
 public class OracleJDBC {
-    public Connection getConnection(InputProperties iproper, InputParameters iparams) {
+    public Connection getConnection(IProperties properties) {
 
         Connection connection = null;
 
@@ -31,12 +35,12 @@ public class OracleJDBC {
 
             connection = DriverManager.getConnection(
                     "jdbc:oracle:thin:@"
-                            + iproper.getHostName()
+                            + properties.getHostName()
                             + ":"
-                            + iproper.getPortNumber()
+                            + properties.getPortNumber()
                             + ":"
-                            + iproper.getDatabaseName(), iparams.getUserName(),
-                    iparams.getUserPass());
+                            + properties.getDatabaseName(), properties.getUserName(),
+                    properties.getUserPass());
 
         } catch (SQLException e) {
 
