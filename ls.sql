@@ -42,13 +42,19 @@ select 'indexes'                  name, 'show info about indexes' text from dual
 union all
 select 'vparams'                  name, 'show v$params' text from dual
 union all
-select 'grants_for_using_advisor' name, 'grants for using advisor' text from dual
+select 'user_objects'             name, 'show user objects with statuses' text from dual
 union all
-select 'user_objects'             name, 'show user_objects with statuses' text from dual
+select 'check_variables'          name, 'show SQL variables ' text from dual
 union all
-select 'pga_top_10'		name, 'show top 10 session which use PGA' text from dual
+select 'open_trans'               name, 'show open transactions' text from dual
 union all
-select 'pga'			name, 'show size PGA' text from dual
+select 'pga_top_10'		  name, 'show top 10 session which use PGA' text from dual
+union all
+select 'pga'		          name, 'show size PGA' text from dual
+union all
+select 'invalids'                 name, 'show list of invalid objects' text from dual
+union all
+select 'gather_schema_stats'      name, 'gather schema stats' text from dual
 )
 order by name
 /
